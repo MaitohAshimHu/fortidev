@@ -10,4 +10,8 @@ export default defineConfig({
       "@": path.resolve(process.cwd(), "./client/src"),
     },
   },
+  build: {
+    outDir: "../dist",
+    emptyOutDir: true,
+  },
 });
