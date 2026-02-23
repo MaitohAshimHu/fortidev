@@ -20,7 +20,6 @@ export function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
-    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -40,8 +39,8 @@ export function Navbar() {
               <Shield className="w-5 h-5 text-primary group-hover:text-glow transition-all duration-300" />
               <div className="absolute inset-0 bg-primary/20 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
-            <span className="font-display font-bold text-xl tracking-tight text-foreground">
-              Fortified<span className="text-primary">.</span>
+            <span className="font-display font-bold text-xl tracking-tight text-foreground whitespace-nowrap">
+              Fortified Developments<span className="text-primary">.</span>
             </span>
           </Link>
 

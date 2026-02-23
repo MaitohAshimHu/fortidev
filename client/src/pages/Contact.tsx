@@ -84,7 +84,7 @@ export default function Contact() {
       await createInquiry.mutateAsync(values);
       
       // 2. Format WhatsApp Message
-      const targetPhone = "1234567890"; // From requirements placeholder
+      const targetPhone = "916204312017"; // e.g., "919876543210"
       const serviceName = serviceOptions.find(o => o.value === values.service)?.label || values.service;
       
       const whatsappMessage = `Hello Fortified Developments!%0A%0A*Name:* ${values.name}%0A*Phone:* ${values.phone}%0A*Interested in:* ${serviceName}%0A%0A*Details:*%0A${values.message}`;
@@ -156,7 +156,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-foreground text-lg">Direct Line</h4>
-                  <p className="text-muted-foreground">+1 (234) 567-890</p>
+                  <p className="text-muted-foreground">+91 (620) 431-2017</p>
                 </div>
               </div>
 
@@ -166,7 +166,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-foreground text-lg">Email Us</h4>
-                  <p className="text-muted-foreground">secure@fortified.dev</p>
+                  <p className="text-muted-foreground">services@fortidev.site</p>
                 </div>
               </div>
             </motion.div>
@@ -196,7 +196,7 @@ export default function Contact() {
                         <FormLabel className="text-muted-foreground">Full Name</FormLabel>
                         <FormControl>
                           <Input 
-                            placeholder="John Doe" 
+                            placeholder="Your Name" 
                             className="bg-background/50 border-border h-12 focus-visible:ring-primary focus-visible:ring-offset-0 focus-visible:border-primary" 
                             {...field} 
                           />
@@ -215,7 +215,7 @@ export default function Contact() {
                           <FormLabel className="text-muted-foreground">Phone Number</FormLabel>
                           <FormControl>
                             <Input 
-                              placeholder="+1 (555) 000-0000" 
+                              placeholder="+91 9999999999" 
                               className="bg-background/50 border-border h-12 focus-visible:ring-primary focus-visible:ring-offset-0 focus-visible:border-primary" 
                               {...field} 
                             />

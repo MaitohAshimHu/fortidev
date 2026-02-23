@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Shield, Twitter, Github, Linkedin } from "lucide-react";
+import { Shield, Phone, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -10,20 +10,23 @@ export function Footer() {
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <Shield className="w-6 h-6 text-primary" />
-              <span className="font-display font-bold text-xl">Fortified.</span>
+              <span className="font-display font-bold text-xl">Fortified Developments</span>
             </Link>
             <p className="text-muted-foreground max-w-sm mb-6">
               Securing and scaling the future of digital business. From Web2 infrastructure to Web3 smart contracts, we build fortresses.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
-                <Twitter className="w-5 h-5" />
+            <div className="flex flex-col gap-3">
+              <a href="tel:+916204312017" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                <Phone className="w-4 h-4" />
+                <span>+91-6204312017</span>
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
-                <Github className="w-5 h-5" />
+              <a href="mailto:services@fortidev.site" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="w-4 h-4" />
+                <span>services@fortidev.site</span>
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors">
-                <Linkedin className="w-5 h-5" />
+              <a href="mailto:ashim.dev.sec@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="w-4 h-4" />
+                <span>ashim.dev.sec@gmail.com</span>
               </a>
             </div>
           </div>
